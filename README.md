@@ -24,17 +24,13 @@ npm install -g collider.jam
     <i><b>🎮 Crafting games with joy. 🎮</b></i>
 </p>
 
-Collider.JAM is a hand-crafted JavaScript framework
+**Collider.JAM** is a hand-crafted JavaScript framework
 for game jamming, creative coding, indie development, and beyond.
 It is _free_, _open-source_, and fun to create with.
-It originated from many years of game jamming and indie game development and brings a unique, flexible, and powerful way of game production. _The jamming way!_
-
+**Collider.JAM** originates from countless game jams and years of indie game development, bringing a unique, flexible, and powerful way of game production. _The jamming way!_
+Find out more at [collider.land](https://collider.land).
 ---
-Find more at [collider.land](https://collider.land).
-
-Install it with ```npm i -g collider.jam```, then open the local manual by running ```jam man intro``` or check out [online docs](https://collider.land/help/).
-
-Explore _Collider.JAM_ code [examples](#examples) and [jam games 🎮](#full-games-with-sources).
+Install **Collider.JAM** with ```npm i -g collider.jam``` and check out [online documentation](https://collider.land/help/). Explore _Collider.JAM_ [code examples](#examples) and [jam game sources 🎮](#full-games-with-sources).
 
 👾 _Follow the jamming way and pixelate reality!_ 👾
 
@@ -51,7 +47,6 @@ Table of Contents
     * [Drop Resource](#drop-resource)
     * [Handle Mouse](#handle-mouse)
     * [Things to Try](#things-to-try)
-* [Use _jam new_](#use-jam-new)
 * [Explore](#explore)
 * [Examples](#examples)
 * [Full Games with Sources](#full-games-with-sources)
@@ -145,12 +140,12 @@ function draw() {
 }
 ```
 
-Now, run 'jam play' command while inside the *planet.mod* folder:
+Now, run the ```jam play``` command while inside the *planet.mod* folder:
 ```
 jam play
 ```
 
-Collider.JAM will start a server and open the default browser
+Collider.JAM will start a server and open the default browser, 
 pointing at [http://localhost:9999](http://localhost:9999).
 You should see the circle.
 
@@ -210,18 +205,19 @@ function evo(dt) {
 ```
 
 Find the working example on [GitHub](https://github.com/invadium/bits.mix/tree/master/circle.mod).
+
 ---
 
 
 ### Prototype in Development Mode
 
-The most basic *Collider.JAM* command is *jam*:
+The simplest *Collider.JAM* command is _jam_:
 
 ```
 jam
 ```
 
-It just runs the jam server without opening a web browser,
+It runs the jam server without opening a web browser,
 unlike *jam play*, which does.
 
 But when it comes to development, it's much better
@@ -232,14 +228,14 @@ jam -d
 ```
 
 That enables hot reload of changes
-and help metadata, among other things.
+and the help metadata, among other things.
 
 Run *Collider.JAM* with -d option,
 then open the browser at http://localhost:9999
-and try to change circle color or radius.
+and try to change the circle color or radius.
 
 The changes will be visible in the browser
-soon after you save lab.js.
+soon after you save ```lab.js```.
 
 Also, you can hit F1 and get online help
 on everything in the mix, including
@@ -326,7 +322,7 @@ function boost(mouseX, mouseY) {
 ```
 
 We are checking if the mouse coordinates are within
-the planet radius and make a 20% speed increase if so.
+the planet's radius and make a 20% speed increase if so.
 The *booster* flag is needed for visual feedback.
 We want to show the player a hint
 that the boost has actually happened.
@@ -371,7 +367,7 @@ on mouse click.
 Find the complete example on [GitHub](https://github.com/invadium/bits.mix/tree/master/planet-boost.mod).
 ---
 
-The _jamming way_ is as simple as that!
+The _jamming way_ is that simple!
 
 Just place the files in proper folders,
 follow naming conventions and
@@ -388,10 +384,6 @@ Keep in mind that the mix follows the directory structure,
 so things you placed in the */lab* folder will be in the */lab* node.
 
 Open the debug console with **F4** and type "help" to see commands available out of the box.
-
-
-
-
 
 
 
@@ -420,9 +412,9 @@ Explore the following games. All created during various game jams and powered by
 But mostly they are OK and show many different ways to organize a project in Collider.JAM.*
 
 * [Telemetry Troubles](https://github.com/invadium/telemetry-troubles.mix) - *[Play](https://invadium.itch.io/telemetry-troubles)* - programming puzzle game created for Noise Jam 3 (2026).
-* [Enceladus Dockyards Boy](https://github.com/invadium/enceladus-dockyards-boy.mix) - *[Play](https://invadium.itch.io/enceladus-dockyards-boy)* - turn-based space ship battle simulation from GameBoy Jam 8 (2020).
+* [Enceladus Dockyards Boy](https://github.com/invadium/enceladus-dockyards-boy.mix) - *[Play](https://invadium.itch.io/enceladus-dockyards-boy)* - turn-based spaceship battle simulation from GameBoy Jam 8 (2020).
 * [Jump 'N Loop](https://github.com/invadium/jump-n-loop.mod) - *[Play](https://invadium.itch.io/jump-n-loop)* - rhythm-based runner from Ludum Dare 47.
-* [300 Hearts for Escape](https://github.com/invadium/300-hearts-for-escape) - *[Play](https://ingwar.itch.io/300-hearts-for-escape)* - a survival trading game placed on an isolated island created during Ludum Dare 44.
+* [300 Hearts for Escape](https://github.com/invadium/300-hearts-for-escape) - *[Play](https://ingwar.itch.io/300-hearts-for-escape)* - a survival trading game set on an isolated island created during Ludum Dare 44.
 * [Plume Surfing Day](https://github.com/invadium/plume-surfing-day.mix) - *[Play](https://invadium.itch.io/plume-surfing-day)* - a god-game about little creatures colonizing asteroids on volcanic plumes made for Brackeys Game Jam 2025/1.
 * [Station Keeping](https://github.com/invadium/station-keeping.mod) - *[Play](https://invadium.itch.io/station-keeping)* - space survival trading simulation from Ludum Dare 46 (2020).
 * [Cosmic Rays 'n DNAs](https://github.com/invadium/cosmic-rays-n-dnas.mod) - *[Play](https://ingwar.itch.io/rays)* - fix DNA in this arcade Global Game Jam 2020 Entry.
