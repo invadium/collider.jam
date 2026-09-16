@@ -1,40 +1,20 @@
-V remap current mod from _ -> __$ to free _ for local usage
-V include the eval parent __ in context
-V redefine math.noramlizeAngle() and introduce math.biNormalizeAngle()
-V LabFrame.on('event') -> recursively apply node.onEvent() for all nodes with handlers
-V remove npm link #landing
-V big [Get Started] call for action #landing
-V refactor out Start page -> link directly to the manual #landing
-V Learn should link to filtered tutorials #landing
-V sprite() scope function to place an image in the middle (? is that a reasonable name?)
-V alternative way to define a mod as buffered through config.json
-V config.json and rootConfig.json
-V .aspect, .vaspect, .px (59*lab.px === rx(.59)), .py, .pb
-V lab x/y/w/h & width/heigh
-V rb(), px(), py(), pb()
-V ctx/lab .portrait (true/false), .landscape (true/false)
-V dump function
-V on() refactoring, introduce emit() on lab nodes
-V signal() default
-V fix env.realTime accessibility in submods
-V block() to place rect in the center (instead of being cornered at the top-left)
-V refresh collider.land style
-V optimize onboarding flow - jump right to documentation, there is no reason to keep another page/step
-V make Frame and LabFrame iterable
-V define locate()
 V streaming info bar
-V aux sample volume control through main gain is wrong, fix so changes in gain would not affect other sounds!
+V aux sample volume control through main gain is wrong; fix so changes in gain would not affect other sounds!
 
 
 
 ### WR4
 
+> streamline rnd()/RND() API - universal, fast, coherent, introduce pseudo-random in the context
+
 # landing
     V update the landing taglines
-    > update and restructure Readme #github
+    > update and restructure README #github
+
+# docs
     > document existing Frame attach policies
     > scroll on text properties doesn't work in Inspector
-    > buffered postponed signals (e.g. sent while mod/trap was disabled, but still waiting to be processed)
+
 
 # dev
 > info node upgrades
@@ -58,7 +38,8 @@ V aux sample volume control through main gain is wrong, fix so changes in gain w
     > filter nodes
 
 # core
-> easy way to replace the root mod canvas to another one and switch the root canvas into a buffering mode (for post-processing)
+> buffered postponed signals (e.g. sent while mod/trap was disabled, but still waiting to be processed)?
+> easy way to replace the root mod canvas with another one and switch the root canvas into a buffering mode (for post-processing)
     > native shader support/loading - it is done with custom code at the moment
 > ability to redefine the graphical context for a lab subNode??? Just create a new mod
 > move flipY() under text() (e.g. text.flipY())
@@ -80,7 +61,7 @@ V aux sample volume control through main gain is wrong, fix so changes in gain w
 > dev drag and drop
 > click dumper/selector (save the last clicked in env?)
 > configurable hold-to-hint overlay with context help (inspector keys, basic console how-tos...)
-> a simple way to instrument alive entity or frame from the console with any probe
+> a simple way to instrument an alive entity or frame from the console with any probe
 > inspector fast search (on [/]?)
 > configurable info layer (with scrolls/tabs or multiple workspaces?) and state save and load
     > current goals
@@ -101,23 +82,24 @@ V aux sample volume control through main gain is wrong, fix so changes in gain w
     > flags/switches
 > debug context menu layer
     > context commands
-    > context sub-menues
+    > context sub-menus
     > switch items
     > slider items
     > scalable numeric value controller (a round one)?
     > adjuster (increase/decrease)
-    > state indicator (condition etc...)
-    > level indicator (health, energy etc...)
+    > state indicator (condition, etc...)
+    > level indicator (health, energy, etc...)
     > pin menu to keep open and follow the entity
 > console autocomplete (Ctrl+Space?)
 > command shortcuts/aliases (like k instead of kill) with autodisable when in conflict
+> fix missing manual when executing "jam man" from another terminal with already running instance
 
 # systems
 > kinetix
 > webaudio
 
 
-> HUD MUST handle it's own events with a subtrap[] entry
+> HUD MUST handle its own events with a subtrap[] entry
 
 # help
 > README.md and other .md files should be included in help topics
@@ -133,10 +115,10 @@ V aux sample volume control through main gain is wrong, fix so changes in gain w
 > refactor file caching subsystem, skip parsing/ext-parsing until later
 > support devicePixelRatio and scale when autoresizing
 > notify about unsupported font name in Firefox (starting with numbers?)
-> fix the js parser detecting a commented 'class' as an actual class definition (create a proper JS parser!)
+> fix the JS parser detecting a commented 'class' as an actual class definition (create a proper JS parser!)
 
 > introduce COLLIDER_HOME env variable to specify lookup paths (e.g. like $PATH or $JAVA_HOME or $GO_PATH)
-> env variable to define collider home, collider path and collider options
+> env variable to define collider home, collider path, and collider options
 > global async support
 > PWA support
 > MAML config language (JSON superset) support
@@ -167,7 +149,7 @@ V aux sample volume control through main gain is wrong, fix so changes in gain w
 
 # dev-tools
 > test subfolders in any place, scan mix for all test nodes
-> run and visualize test on boot, show error when failed
+> run and visualize tests on boot, show error when failed
 > option to halt or continue on failed tests
 > include test results as a help page
 > more sophisticated console parsing and processing/expect/matching utilities
@@ -188,26 +170,26 @@ V aux sample volume control through main gain is wrong, fix so changes in gain w
 > multiple mood hints to autoconfig UI dark/light/pastel - futuristic/pixelated/gothic/cartoon/handwritten
 
 > core testing
-> option to ignore boot up errors (?)
+> option to ignore boot-up errors (?)
 > shiftLight
 > shiftSaturation
-> extend the .js parser to accept a multi-line constant declaration lists
+> extend the .js parser to accept multi-line constant declaration lists
 > split help for length & hypot
 > scale should accept one parameter and just duplicate it for simplicity
 > run test by a tag
 
 > make slide camera and translation Nodes subMode independent - currently they all are evaluated in the root context and work just there
-> fix node inspector loosing focus problem
+> fix node inspector losing focus problem
 > fix failed patching of /lab/background node with /lab/background/_background
 > fix ambiguous function arguments parsing in help meta (e.g. /lab/control/state include() function)
 > fix help parsing of included class methods (e.g. /lab/control/state/GroupState methods description is missing)
-> fix !DOCTYPE problem in help.html
+> fix "!DOCTYPE" problem in help.html
 > fix layout switch problem in help.html
 > fix erroneous main description detection in help (e.g. ghoster.mix/lab/controller)
 > fix require() for local path (with no /) and for subMods
 > fix .spawn DNA for subMods
 > fix missing sys.construct() function while spawning a DNA
-> investigate why are we trying to patch help.js on update? Is it an intended behavior?
+> investigate why we are trying to patch help.js on update? Is it an intended behavior?
 > show error message on the boot screen (?)
 
 # advanced features
@@ -236,7 +218,7 @@ V aux sample volume control through main gain is wrong, fix so changes in gain w
 >>> challenges
     >> bouncing planet
     >> planet impact
-    >> planet bouling
+    >> planet bowling
     >> fireworks
     >> star sky
     >> into the starfield
@@ -250,7 +232,7 @@ V aux sample volume control through main gain is wrong, fix so changes in gain w
 >>> interactive tutorial (netdrifter) inspired by:
     >> starfield
     >> brownian dots connect
-    >> particle repulse with connection
+    >> particle repulsion with connection
     >> mouse watching eyes
     >> dino jump
     >> parallax starfield
@@ -307,10 +289,10 @@ V aux sample volume control through main gain is wrong, fix so changes in gain w
 > platform physics
 > assert guards
 > object pool node
-> move metadata parser out of loader and schedule it for latter?
+> move metadata parser out of loader and schedule it for later?
 > automatic help #tags propagation for all child nodes (e.g. for /cmd or /trap)
 > store in local storage help usage info to show the most popular topics section (or on top?)
-> path in man should be divided to multiple hyperlinks on different nodes in the hierarchy
+> path in man should be divided into multiple hyperlinks on different nodes in the hierarchy
 > man metadata to include page sorting priorities as a list of page names (just like a menu)
 ? move functions like select out of Frame, so there is less chance of name collisions
 > mutate function or other object into a frame
@@ -319,10 +301,10 @@ V aux sample volume control through main gain is wrong, fix so changes in gain w
 > leave original patch strategy
 > before() and after() chaining strategy for function patch
 > notify in logs about any patching conflicts (like start.js replacing original mod.start!)
-> tribal nodes that automatically spawns particular dna when data is attached to the node
+> tribal nodes that automatically spawn particular dna when data is attached to the node
 > augment nodes to automatically extend/augment objects as they are attached to a node
 > assert guards - make sure we are attaching proper nodes
-> meta actions (like in lua metatables) - do custom stuff on particular fs event (attach, detach etc)
+> meta actions (like in Lua metatables) - do custom stuff on particular fs event (attach, detach etc)
 > object pool node
 > universal sprite node
 > properties inspector
@@ -330,10 +312,36 @@ V aux sample volume control through main gain is wrong, fix so changes in gain w
 > switch between frame view and object view in inspector
 > object monitoring on exploration panel
 > take units from local package in package mode, ignore optional flag
-> refactor HUD style application model
+> refactor HUD style, application model
 > refactor HUD layout model
 > refactor Emitter
 
+
+### WR3
+V remap current mod from _ -> __$ to free _ for local usage
+V include the eval parent __ in context
+V redefine math. normalizeAngle() and introduce math.biNormalizeAngle()
+V LabFrame.on('event') -> recursively apply node.onEvent() for all nodes with handlers
+V remove npm link #landing
+V big [Get Started] call to action #landing
+V refactor out Start page -> link directly to the manual #landing
+V Learn should link to filtered tutorials #landing
+V sprite() scope function to place an image in the middle (? is that a reasonable name?)
+V alternative way to define a mod as buffered through config.json
+V config.json and rootConfig.json
+V .aspect, .vaspect, .px (59*lab.px === rx(.59)), .py, .pb
+V lab x/y/w/h & width/heigh
+V rb(), px(), py(), pb()
+V ctx/lab .portrait (true/false), .landscape (true/false)
+V dump function
+V on() refactoring, introduce emit() on lab nodes
+V signal() default
+V fix env.realTime accessibility in submods
+V block() to place rect in the center (instead of being cornered at the top-left)
+V refresh collider.land style
+V optimize onboarding flow - jump right to documentation; there is no reason to keep another page/step
+V make Frame and LabFrame iterable
+V define locate()
 
 ### WR2
 V monoLab mode - run a specified lab.js file or a specified list of /lab nodes
@@ -374,16 +382,17 @@ V shiftHue
 V fix double onSpawn() problem
 V fix Frame.kill() and kill logic in general
 V animation node
-V web-pack like functionality to pak non-mixed packages as libraries
+V webpack-like functionality to pack non-mixed packages as libraries
 V [-] scan problem with frame=file name (e.g. test/test.js)
 V take units from the package or take global units modes
 V mod control (pause, pauseAll, hide, hideAll etc)
 V optional flag for global units (ignore optional by default)
 V sketch mod and sketch mix modes
 V .spawn data files for fast setup
-V font() should accepts both just [name] and [14px name]
+V font() should accept both just [name] and [14px name]
 V mod transition
 V transform lab node
 V dynamic Z
 V log(msg) should be a function - not a raw frame
 V units.json is loaded from jam or local folder and not from the base
+

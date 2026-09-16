@@ -17,7 +17,7 @@ Welcome to Collider.JAM!
 
 ---
 ```
-npm i -g collider.jam; jam man intro
+npm install -g collider.jam
 ```
 
 <p align="right">
@@ -29,23 +29,21 @@ for game jamming, creative coding, indie development, and beyond.
 It is _free_, _open-source_, and fun to create with.
 It originated from many years of game jamming and indie game development and brings a unique, flexible, and powerful way of game production. _The jamming way!_
 
-_Game prototyping_ is an art that mixes design, technology, creativity, and hyper-focused productivity.
-It is a way of development that is radically different from a typical approach one might find in the industry.
-And we believe it deserves a dedicated tool, capable of addressing the specific needs of a rapidly evolving prototype and the creative flow that powers it. 
-
 ---
-Install with ```npm i -g collider.jam```, visit [collider.land](https://collider.land)
-and check out [online docs](https://collider.land/help/).
+Find more at [collider.land](https://collider.land).
+
+Install it with ```npm i -g collider.jam```, then open the local manual by running ```jam man intro``` or check out [online docs](https://collider.land/help/).
 
 Explore _Collider.JAM_ code [examples](#examples) and [jam games 🎮](#full-games-with-sources).
 
 👾 _Follow the jamming way and pixelate reality!_ 👾
 
-
+---
 
 Table of Contents
 -----------------
 * [Install](#install)
+* [Game Jamming](#game-jamming)
 * [Bouncing Planet](#bouncing-planet)
     * [Draw Shape](#draw-shape)
     * [Move Shape](#move-shape)
@@ -68,41 +66,55 @@ Install
     <i><b>Unlock your creativity.</b></i>
 </p>
 
-To start jamming, we need to install the _collider.jam npm package._
+To start jamming, install the _collider.jam npm package_.
 It provides a shell for bootstrapping, running, and packaging projects.
 
 ---
 Make sure you have a relatively modern
-[Node.js](https://nodejs.org) installed.
+_[Node.js](https://nodejs.org)_ and _npm_ installed (check ```node --version```).
 
-Open your system terminal and check the Node.js version with:
-```bash
-node --version
-> v24.9.0
-```
-Everything from v22 and above should work just fine. Otherwise, follow [the installation instructions](https://nodejs.org/en/download) for your system.
-
----
-To install collider.jam, run:
+To install **Collider.JAM** run the following command in the system terminal:
 
 ```
 npm install -g collider.jam
 ```
 
-When installed, check out the version and help:
+When installed, open the local manual to explore potential next steps:
+
 ```
-jam version
-jam help
+jam man
 ```
+
+There you can read more about **Collider.JAM**, find out how to use it, explore code examples and tutorials, and browse other included reference materials.
+
+
+Game Jamming
+------------
+
+_Game jamming_ is an art form that mixes design, technology, creativity, and hyper-focused productivity.
+It is a way of software development that is radically different from a typical approach one might find in other fields.
+And we believe it deserves a dedicated tool, capable of addressing the specific needs of a rapidly evolving prototype and the creative flow that powers it.
+
+**Collider.JAM** takes JavaScript dynamism to the extreme, delivering a framework radically different from a typical approach.
+
+There is no _GameObject_ to inherit, no _MonoBehavior_ to implement, no imports, no exports, no resource loading... None of that industrial-grade object-oriented nonsense plaguing the game industry and creating unnecessary noise.
+
+Instead, **Collider.JAM** offers reasonable conventions, dynamic in-place binding of context, short UNIX-style names, and automatic imports, exports, and loads.
+
+So [explore](https://collider.land/help/) **Collider.JAM** JavaScript majik, find out when is the next interesting [game jam](https://itch.io/jams) and create something awesome!
+
+_Or you can start with creating a bouncing planet._
+
 
 
 Bouncing Planet
 ---------------
 <p align="right">
-    <i><b>🎮 The Fun of the Game Jamming. 🎮</b></i>
+    <i><b>🎮 The Fun of Game Jamming. 🎮</b></i>
 </p>
 
 To feel the taste of _Collider.JAM_, let's create a simulation of a bouncing planet.
+
 
 ### Draw Shape
 
@@ -133,7 +145,6 @@ function draw() {
 }
 ```
 
----
 Now, run 'jam play' command while inside the *planet.mod* folder:
 ```
 jam play
@@ -142,6 +153,8 @@ jam play
 Collider.JAM will start a server and open the default browser
 pointing at [http://localhost:9999](http://localhost:9999).
 You should see the circle.
+
+---
 
 
 
@@ -196,9 +209,8 @@ function evo(dt) {
 }
 ```
 
----
 Find the working example on [GitHub](https://github.com/invadium/bits.mix/tree/master/circle.mod).
-
+---
 
 
 ### Prototype in Development Mode
@@ -264,7 +276,7 @@ function draw() {
 }
 ```
 
-We've changed the background to totally black - to match the darkness of space.
+We've changed the background to totally black to match the darkness of space.
 
 Then, we called the _image()_ function to draw the planet's texture.
 Notice that the image resource name must match
@@ -276,7 +288,7 @@ the planet's atmosphere.
 
 Check out this step on [GitHub](https://github.com/invadium/bits.mix/tree/master/planet.mod) -
 the version there also spins the planet with *save()/rotate()*.
-
+---
 
 
 ### Handle Mouse
@@ -356,8 +368,8 @@ function mouseUp() {
 Try it out - the planet is going to accelerate
 on mouse click. 
 
----
 Find the complete example on [GitHub](https://github.com/invadium/bits.mix/tree/master/planet-boost.mod).
+---
 
 The _jamming way_ is as simple as that!
 
@@ -379,60 +391,7 @@ Open the debug console with **F4** and type "help" to see commands available out
 
 
 
-Use _jam new_
--------------
-The _new_ command creates various jam objects.
-Use it to bootstrap a new mod or create a trap
-or a new prototype in */dna*.
 
-Run ```jam new ls``` to list the possibilities:
-
-```
-jam new ls
-```
-
-To create a sample mod, just type:
-```
-jam new mod test
-```
-That generates the _test.mod_ folder with a bunch
-of test objects - a sample _/dna_ prototype,
-some entities in _/lab_, a _/lib_ function,
-a sample resource, and a couple of traps.
-These represent entities you can find in most _Collider.JAM_ games.
-
-The _new_ command shows affected files and generated content.
-
-To create a sample class prototype:
-
-```
-jam new class TestEntity
-```
-
-Or you can generate mouse-tracking eyes as simple as:
-```
-jam new eyes
-```
-
-Use generated objects as blueprints for your own.
-They illustrate _Collider.JAM_ conventions and
-a canonical way to implement basic things.
-
-
-
-Explore
--------
-
-The following links could be useful:
-
-* [collider.land](https://collider.land
-* [start](http://collider.land/start.html)
-* [design](https://collider.land/help/#design)
-* [online help](https://collider.land/help/)
-* [blog](https://ikhotin.com/posts/)
-* [how to](man/HowTo.md) 
-* [map](man/Map.md) 
-* [glossary](man/Glossary.md) 
 
 
 
@@ -474,6 +433,21 @@ But mostly they are OK and show many different ways to organize a project in Col
 
 
 
+Explore More
+-------------
+
+The following links could be useful:
+
+* [collider.land](https://collider.land)
+* [online help](https://collider.land/help/)
+* [design](https://collider.land/help/#design)
+* [how to](man/HowTo.md)
+* [map](man/Map.md)
+* [glossary](man/Glossary.md)
+* [blog](https://ikhotin.com/posts/)
+
+
+
 How to Contribute
 -----------------
 
@@ -492,3 +466,5 @@ License
 _Collider.JAM_ is free and open-source software released under the
 [Zlib License](LICENSE).
 Bundled resources are covered separately - see [LICENSE-RES](https://github.com/invadium/collider.mix/blob/master/LICENSE-RES) in _collider.mix_.
+
+
