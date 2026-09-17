@@ -12,11 +12,39 @@ V aux sample volume control through main gain is wrong; fix so changes in gain w
     > update and restructure README #github
 
 # docs
+    > rename 'Mixes' -> 'Examples'
+    > the page list scrollbar should be under the search bar and not to the side of it
+    > there should be "Home" button to the left of the search bar
+    > there should be "Menu" button at the right top to switch between themes and possibly do other things
+    > turn "bouncing planet" from readme into an extended tutorial
+    > the "eyes" tutorial with color variations, "hold to set the size" mechanics and ability to remove with the right click
+    > introducing collider.jam
+    > introducing Developer Releases
+    > introducing War Releases
     > document existing Frame attach policies
-    > scroll on text properties doesn't work in Inspector
+    > mix
+    > mod structure as a reflection of file system
+    > environment
+    > lab
+    > dna and spawn()
+    > Frames and LabFrames
+    > Signals and Traps
+    > Spice - tweening, animations and particles
+    > Kinetix
+    > Particles
+    > cue and timelines
+    > jobs
+    > alt and scope
+    > resources
+    > pin and pub
+    > sys and lib
+    > drawing
+    > sound
+    > math
 
 
 # dev
+> scroll on text properties doesn't work in Inspector
 > info node upgrades
     > multiple multi-column adjustment options - top/bottom + left/center/right
     > default adjustment
@@ -234,7 +262,6 @@ V aux sample volume control through main gain is wrong; fix so changes in gain w
     >> brownian dots connect
     >> particle repulsion with connection
     >> mouse watching eyes
-    >> dino jump
     >> parallax starfield
     >> snake
     >> breakout

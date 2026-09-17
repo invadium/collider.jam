@@ -16,6 +16,7 @@ Welcome to Collider.JAM!
 | [discord](https://discord.gg/kxNnHc2)**
 
 ---
+
 ```
 npm install -g collider.jam
 ```
@@ -29,7 +30,9 @@ for game jamming, creative coding, indie development, and beyond.
 It is _free_, _open-source_, and fun to create with.
 **Collider.JAM** originates from countless game jams and years of indie game development, bringing a unique, flexible, and powerful way of game production. _The jamming way!_
 Find out more at [collider.land](https://collider.land).
+
 ---
+
 Install **Collider.JAM** with ```npm i -g collider.jam``` and check out [online documentation](https://collider.land/help/). Explore _Collider.JAM_ [code examples](#examples) and [jam game sources 🎮](#full-games-with-sources).
 
 👾 _Follow the jamming way and pixelate reality!_ 👾
@@ -65,6 +68,7 @@ To start jamming, install the _collider.jam npm package_.
 It provides a shell for bootstrapping, running, and packaging projects.
 
 ---
+
 Make sure you have a relatively modern
 _[Node.js](https://nodejs.org)_ and _npm_ installed (check ```node --version```).
 
@@ -128,6 +132,7 @@ It could be unusual at first, but it makes a lot of sense
 once you get into the jamming mode.
 
 ---
+
 Create a file *planet.mod/lab.js* and fill in the following lines:
 
 ```js
@@ -284,6 +289,7 @@ the planet's atmosphere.
 
 Check out this step on [GitHub](https://github.com/invadium/bits.mix/tree/master/planet.mod) -
 the version there also spins the planet with *save()/rotate()*.
+
 ---
 
 
