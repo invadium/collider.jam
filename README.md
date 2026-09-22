@@ -97,9 +97,11 @@ There is no _GameObject_ to inherit, no _MonoBehavior_ to implement, no imports,
 
 Instead, **Collider.JAM** offers reasonable conventions, dynamic in-place binding of context, short UNIX-style names, and automatic imports, exports, and loads.
 
+We want to _create_ games, not battle for our place in overcomplicated class hierarchies or configure engines in the endless labyrinth of tabs and properties.
+
 So [explore](https://collider.land/help/) **Collider.JAM** JavaScript majik, find out when is the next interesting [game jam](https://itch.io/jams) and create something awesome!
 
-_Or you can start with creating a bouncing planet._
+_Or you can start with creating a bouncing planet below._
 
 
 
