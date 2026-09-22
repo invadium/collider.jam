@@ -8,12 +8,9 @@ Welcome to Collider.JAM!
 ========================
 <i>🎮 a delightful game framework to power-up creative flow.</i>
 
-### [collider.land](https://collider.land)
-| [start](https://collider.land/help/#.getting-started)
-| [design](https://collider.land/help/#design)
-| [docs](https://collider.land/help/)
-| [blog](https://ikhotin.com/posts/)
-| [discord](https://discord.gg/kxNnHc2)
+### [collider.land](https://collider.land) | [start](https://collider.land/help/#.getting-started) | [design](https://collider.land/help/#design) | [docs](https://collider.land/help/) | [blog](https://ikhotin.com/posts/) | [discord](https://discord.gg/kxNnHc2)
+
+---
 
 ```
 npm install -g collider.jam
