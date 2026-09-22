@@ -7,6 +7,9 @@
 
 Welcome to Collider.JAM!
 ========================
+<i><b>a delightful game framework to power-up creative flow. 🎮</b></i>
+
+---
 
 **[collider.land](https://collider.land)
 | [start](https://collider.land/help/#.getting-started)
@@ -16,13 +19,12 @@ Welcome to Collider.JAM!
 | [discord](https://discord.gg/kxNnHc2)**
 
 ---
-
 ```
 npm install -g collider.jam
 ```
 
 <p align="right">
-    <i><b>🎮 Crafting games with joy. 🎮</b></i>
+    <i><b>🎮 Crafting games with joy.</b></i>
 </p>
 
 **Collider.JAM** is a hand-crafted JavaScript framework
@@ -30,9 +32,7 @@ for game jamming, creative coding, indie development, and beyond.
 It is _free_, _open-source_, and fun to create with.
 **Collider.JAM** originates from countless game jams and years of indie game development, bringing a unique, flexible, and powerful way of game production. _The jamming way!_
 Find out more at [collider.land](https://collider.land).
-
 ---
-
 Install **Collider.JAM** with ```npm i -g collider.jam``` and check out [online documentation](https://collider.land/help/). Explore _Collider.JAM_ [code examples](#examples) and [jam game sources 🎮](#full-games-with-sources).
 
 👾 _Follow the jamming way and pixelate reality!_ 👾
@@ -61,14 +61,13 @@ Table of Contents
 Install
 -------
 <p align="right">
-    <i><b>Unlock your creativity.</b></i>
+    <i><b>🎮 Unlock your creativity.</b></i>
 </p>
 
 To start jamming, install the _collider.jam npm package_.
 It provides a shell for bootstrapping, running, and packaging projects.
 
 ---
-
 Make sure you have a relatively modern
 _[Node.js](https://nodejs.org)_ and _npm_ installed (check ```node --version```).
 
@@ -89,14 +88,17 @@ There you can read more about **Collider.JAM**, find out how to use it, explore 
 
 Game Jamming
 ------------
+<p align="right">
+    <i><b>🎮 The Fun of Game Jamming.</b></i>
+</p>
 
 _Game jamming_ is an art form that mixes design, technology, creativity, and hyper-focused productivity.
-It is a way of software development that is radically different from a typical approach one might find in other fields.
-And we believe it deserves a dedicated tool, capable of addressing the specific needs of a rapidly evolving prototype and the creative flow that powers it.
+It is a unique way of software development, radically different from the typical approach.
+We believe it deserves a dedicated tool, capable of addressing the specific needs of a rapidly evolving prototype and the creative flow that powers it.
 
-**Collider.JAM** takes JavaScript dynamism to the extreme, delivering a framework radically different from a typical approach.
+**Collider.JAM** takes JavaScript dynamism to the extreme, delivering a framework radically different from a mainstream one.
 
-There is no _GameObject_ to inherit, no _MonoBehavior_ to implement, no imports, no exports, no resource loading... None of that industrial-grade object-oriented nonsense plaguing the game industry and creating unnecessary noise.
+There is no _GameObject_ to inherit, no _MonoBehavior_ to implement, no imports, no exports, no resource loading... None of that enterprise-grade object-oriented nonsense plaguing the game industry and creating unnecessary noise.
 
 Instead, **Collider.JAM** offers reasonable conventions, dynamic in-place binding of context, short UNIX-style names, and automatic imports, exports, and loads.
 
@@ -109,13 +111,15 @@ _Or you can start with creating a bouncing planet._
 Bouncing Planet
 ---------------
 <p align="right">
-    <i><b>🎮 The Fun of Game Jamming. 🎮</b></i>
+    <i><b>🎮 Learn by Building. Build by Plaing</b></i>
 </p>
 
 To feel the taste of _Collider.JAM_, let's create a simulation of a bouncing planet.
 
 
+
 ### Draw Shape
+
 
 Create a folder named 'planet.mod' in any convenient place
 ```
@@ -132,7 +136,6 @@ It could be unusual at first, but it makes a lot of sense
 once you get into the jamming mode.
 
 ---
-
 Create a file *planet.mod/lab.js* and fill in the following lines:
 
 ```js
@@ -161,7 +164,7 @@ You should see the circle.
 ### Move Shape
 
 Let's make some movement by introducing
-variables for the circle position and direction.
+variables for the circle's position and direction.
 We also need the *evo(dt)* function to move it:
 
 ```js
@@ -215,6 +218,10 @@ Find the working example on [GitHub](https://github.com/invadium/bits.mix/tree/m
 
 
 ### Prototype in Development Mode
+
+<p align="right">
+    <i><b>🎮 Tuned for delightful, distraction-free development.</b></i>
+</p>
 
 The simplest *Collider.JAM* command is _jam_:
 
@@ -289,8 +296,8 @@ the planet's atmosphere.
 
 Check out this step on [GitHub](https://github.com/invadium/bits.mix/tree/master/planet.mod) -
 the version there also spins the planet with *save()/rotate()*.
-
 ---
+
 
 
 ### Handle Mouse
@@ -371,11 +378,12 @@ Try it out - the planet is going to accelerate
 on mouse click. 
 
 Find the complete example on [GitHub](https://github.com/invadium/bits.mix/tree/master/planet-boost.mod).
+
 ---
 
 The _jamming way_ is that simple!
 
-Just place the files in proper folders,
+Just place the files in the proper folders,
 follow naming conventions and
 Collider.JAM will assemble and run
 the game for you.
@@ -393,10 +401,10 @@ Open the debug console with **F4** and type "help" to see commands available out
 
 
 
-Examples
---------
+Tutorials and Examples
+----------------------
 
-There are useful _Collider.JAM_ examples on GitHub:
+There are several useful _Collider.JAM_ examples:
 
 * [Bits Mix](https://github.com/invadium/bits.mix) - various code snippets.
 * [Hello Planet Impact](https://github.com/invadium/hello-collider-impact.mod) - asteroid impact simulation.
@@ -428,21 +436,6 @@ But mostly they are OK and show many different ways to organize a project in Col
 * [Xeno Relay Day](https://github.com/invadium/xeno-relay-day) - *[Play](https://ingwar.itch.io/xeno-relay-day)* - cosmic relay network puzzler created during Global Game Jam 2018.
 * [Metro Gang](https://github.com/invadium/metro-gang.mix) - *[Play](https://invadium.itch.io/metro-gang-plus)* - fight against rival gangs for control of the city in this Ludum Dare 45 Entry.
 * [Master of Ritual](https://github.com/invadium/master-of-ritual) - *[Play](https://ingwar.itch.io/master-or-ritual)* - dungeon crawler from Ludum Dare 43 (2018).
-
-
-
-Explore More
--------------
-
-The following links could be useful:
-
-* [collider.land](https://collider.land)
-* [online help](https://collider.land/help/)
-* [design](https://collider.land/help/#design)
-* [how to](man/HowTo.md)
-* [map](man/Map.md)
-* [glossary](man/Glossary.md)
-* [blog](https://ikhotin.com/posts/)
 
 
 
