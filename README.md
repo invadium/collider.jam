@@ -28,7 +28,7 @@ Find out more at [collider.land](https://collider.land).
 
 ---
 
-Install **Collider.JAM** with ```npm i -g collider.jam``` and check out [online documentation](https://collider.land/help/). Explore _Collider.JAM_ [code examples](#examples) and [jam game sources 🎮](#full-games-with-sources).
+Install **Collider.JAM** with ```npm i -g collider.jam``` and check out [online documentation](https://collider.land/help/). Explore _Collider.JAM_ [tutorials and examples](#tutorials-and-examples) and [jam games 🎮](#jam-games).
 
 👾 _Follow the jamming way and pixelate reality!_ 👾
 
@@ -409,10 +409,10 @@ There are several useful _Collider.JAM_ examples:
 
 
 
-Full Games with Sources
------------------------
+Jam Games
+---------
 <p align="right">
-    <i><b>Follow the jamming way</b></i>
+    <b>🎮 <i>Follow the jamming way!</i></b>
 </p>
 
 Explore the following games. All created during various game jams and powered by *[_Collider.Jam_](https://collider.land)*.
@@ -436,6 +436,9 @@ But mostly they are OK and show many different ways to organize a project in Col
 
 How to Contribute
 -----------------
+<p align="right">
+    <b>👾 <i>Pixelate Reality!</i></b>
+</p>
 
 Star this repo, join our [Discord](https://discord.gg/kxNnHc2),
 create something and share it with *#collider.jam* tag.
