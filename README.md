@@ -4,21 +4,17 @@
 </a>
 </p>
 
-
 Welcome to Collider.JAM!
 ========================
-<i><b>a delightful game framework to power-up creative flow. 🎮</b></i>
+<i>🎮 a delightful game framework to power-up creative flow.</i>
 
----
-
-**[collider.land](https://collider.land)
+### [collider.land](https://collider.land)
 | [start](https://collider.land/help/#.getting-started)
 | [design](https://collider.land/help/#design)
 | [docs](https://collider.land/help/)
 | [blog](https://ikhotin.com/posts/)
-| [discord](https://discord.gg/kxNnHc2)**
+| [discord](https://discord.gg/kxNnHc2)
 
----
 ```
 npm install -g collider.jam
 ```
@@ -32,7 +28,9 @@ for game jamming, creative coding, indie development, and beyond.
 It is _free_, _open-source_, and fun to create with.
 **Collider.JAM** originates from countless game jams and years of indie game development, bringing a unique, flexible, and powerful way of game production. _The jamming way!_
 Find out more at [collider.land](https://collider.land).
+
 ---
+
 Install **Collider.JAM** with ```npm i -g collider.jam``` and check out [online documentation](https://collider.land/help/). Explore _Collider.JAM_ [code examples](#examples) and [jam game sources 🎮](#full-games-with-sources).
 
 👾 _Follow the jamming way and pixelate reality!_ 👾
@@ -457,5 +455,7 @@ License
 _Collider.JAM_ is free and open-source software released under the
 [Zlib License](LICENSE).
 Bundled resources are covered separately - see [LICENSE-RES](https://github.com/invadium/collider.mix/blob/master/LICENSE-RES) in _collider.mix_.
+
+
 
 
